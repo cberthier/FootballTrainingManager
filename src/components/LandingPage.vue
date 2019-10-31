@@ -8,7 +8,7 @@
         <signup-button class="btn-lg"></signup-button>
       </p>
     </div>
-    <v-item-group :mandatory="mandatory" :multiple="multiple">
+    <v-item-group>
       <v-row>
         <v-col col="12" md="4">
           <v-card class="mx-auto">

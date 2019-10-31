@@ -24,8 +24,22 @@
     <v-app-bar app clipped-left>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"/>
       <v-toolbar-title>Football Training Manager</v-toolbar-title>
-    </v-app-bar>
 
+      <v-spacer></v-spacer>
+      <v-menu left bottom>
+        <template v-slot:activator="{ on }">
+          <v-btn text v-on="on">John Doe
+            <v-icon>mdi-menu-down</v-icon>
+          </v-btn>
+        </template>
+
+        <v-list>
+          <v-list-item v-for="n in 5" :key="n" @click="() => {}">
+            <v-list-item-title>Option {{ n }}</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
+    </v-app-bar>
     <v-content>
       <v-container class="fill-height" fluid>
         <router-view></router-view>
