@@ -23,7 +23,7 @@
 
     <v-app-bar app clipped-left>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"/>
-      <v-toolbar-title>Football Training Manager</v-toolbar-title>
+      <v-btn text to="/">Football Training Manager</v-btn>
 
       <v-spacer></v-spacer>
       <v-menu left bottom>

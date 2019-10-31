@@ -4,7 +4,9 @@ import VeeValidate from "vee-validate";
 import vuetify from "./vuetify"; // path to vuetify export
 import VueRouter from "vue-router";
 
-import LandingPage from "./components/LandingPage.vue";
+import LandingPage from "./components/LandingPage";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
 
 Vue.use(VeeValidate, { inject: false });
 Vue.use(VueRouter);
@@ -16,7 +18,7 @@ const routes = [
     path: "/",
     name: "Landing Page",
     component: LandingPage
-  } /* ,
+  },
   {
     path: "/login",
     name: "Login Page",
@@ -26,7 +28,7 @@ const routes = [
     path: "/signup",
     name: "Signup Page",
     component: Signup
-  },
+  } /* ,
   {
     path: "/home",
     name: "Home Page",
