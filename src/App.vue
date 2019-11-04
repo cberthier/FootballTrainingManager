@@ -2,7 +2,7 @@
   <v-app id="inspire">
     <v-navigation-drawer v-model="drawer" app clipped>
       <v-list dense>
-        <v-list-item link>
+        <v-list-item>
           <v-list-item-action>
             <v-icon>mdi-view-dashboard</v-icon>
           </v-list-item-action>
@@ -10,14 +10,93 @@
             <v-list-item-title>Dashboard</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-settings</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Settings</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
+        <v-list-group :prepend-icon="mdi-home" no-action>
+          <template v-slot:activator>
+            <v-list-item-action>
+              <v-icon>mdi-numeric-1-box</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Senior Team</v-list-item-title>
+            </v-list-item-content>
+          </template>
+
+          <v-list-item link>
+            <v-list-item-action>
+              <v-icon>mdi-account-group</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Team Players</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item link>
+            <v-list-item-action>
+              <v-icon>mdi-sync</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Auto Update</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item link>
+            <v-list-item-action>
+              <v-icon>mdi-account-plus</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Add Player</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item link>
+            <v-list-item-action>
+              <v-icon>mdi-chart-areaspline</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Training Analyser</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-group>
+
+        <v-list-group :prepend-icon="mdi-home" no-action>
+          <template v-slot:activator>
+            <v-list-item-action>
+              <v-icon>mdi-numeric-2-box</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Youth Team</v-list-item-title>
+            </v-list-item-content>
+          </template>
+
+          <v-list-item link>
+            <v-list-item-action>
+              <v-icon>mdi-account-group</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Team Players</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item link>
+            <v-list-item-action>
+              <v-icon>mdi-sync</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Auto Update</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item link>
+            <v-list-item-action>
+              <v-icon>mdi-account-plus</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Add Player</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item link>
+            <v-list-item-action>
+              <v-icon>mdi-chart-areaspline</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Training Analyser</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-group>
       </v-list>
     </v-navigation-drawer>
 
