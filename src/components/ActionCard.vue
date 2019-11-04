@@ -2,13 +2,13 @@
   <v-card>
     <v-container>
       <v-row>
-        <v-col col="12" md="4">
+        <v-col cols="12" sm="12" md="12" lg="3" xl="3" align-self="center">
           <div class="logo">
             <v-icon x-large>{{logo}}</v-icon>
           </div>
         </v-col>
-        <v-col col="12" md="8">
-          <h1>{{title}}</h1>
+        <v-col cols="12" sm="12" md="12" lg="9" xl="9">
+          <h2>{{title}}</h2>
           <div>
             <p>{{description}}</p>
           </div>
@@ -26,14 +26,19 @@ export default {
 </script>
 
 <style scoped>
+.v-card {
+  min-height: 172px;
+}
 .logo {
   display: block;
   position: relative;
   text-align: center;
   border: 1px solid #e5e5e5;
   border-radius: 50%;
-  width: 100px;
-  line-height: 100px;
-  height: 100px;
+  width: 80px;
+  line-height: 80px;
+  height: 80px;
+  margin-right: auto;
+  margin-left: auto;
 }
 </style>
