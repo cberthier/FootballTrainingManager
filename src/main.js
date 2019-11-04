@@ -7,6 +7,7 @@ import VueRouter from "vue-router";
 import LandingPage from "./components/LandingPage";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
+import Home from "./components/Home";
 
 Vue.use(VeeValidate, { inject: false });
 Vue.use(VueRouter);
@@ -28,12 +29,12 @@ const routes = [
     path: "/signup",
     name: "Signup Page",
     component: Signup
-  } /* ,
+  },
   {
     path: "/home",
     name: "Home Page",
     component: Home
-  },
+  } /* ,
   {
     path: "/seniorTeam/playerList",
     name: "Player List Page",
