@@ -8,28 +8,26 @@
         <signup-button class="btn-lg"></signup-button>
       </p>
     </div>
-    <v-item-group>
-      <v-row>
-        <v-col col="12" md="4">
-          <v-card class="mx-auto">
-            <v-img class="white--text align-end" src="https://placekitten.com/g/300/300"></v-img>
-            <v-card-title>Automatique update</v-card-title>
-          </v-card>
-        </v-col>
-        <v-col col="12" md="4">
-          <v-card class="mx-auto">
-            <v-img class="white--text align-end" src="https://placekitten.com/g/300/300"></v-img>
-            <v-card-title>Graphic visualisation</v-card-title>
-          </v-card>
-        </v-col>
-        <v-col col="12" md="4">
-          <v-card class="mx-auto">
-            <v-img class="white--text align-end" src="https://placekitten.com/g/300/300"></v-img>
-            <v-card-title>Training priority</v-card-title>
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-item-group>
+    <v-row>
+      <v-col cols="12" sm="4" md="4" lg="4" xl="4">
+        <v-card class="mx-auto">
+          <v-img class="white--text align-end" src="https://placekitten.com/g/300/300"></v-img>
+          <v-card-title>Automatique update</v-card-title>
+        </v-card>
+      </v-col>
+      <v-col cols="12" sm="4" md="4" lg="4" xl="4">
+        <v-card class="mx-auto">
+          <v-img class="white--text align-end" src="https://placekitten.com/g/300/300"></v-img>
+          <v-card-title>Graphic visualisation</v-card-title>
+        </v-card>
+      </v-col>
+      <v-col cols="12" sm="4" md="4" lg="4" xl="4">
+        <v-card class="mx-auto">
+          <v-img class="white--text align-end" src="https://placekitten.com/g/300/300"></v-img>
+          <v-card-title>Training priority</v-card-title>
+        </v-card>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
