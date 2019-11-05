@@ -8,6 +8,7 @@ import LandingPage from "./components/LandingPage";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Home from "./components/Home";
+import SeniorPlayerList from "@/components/seniorTeam/PlayerList";
 
 Vue.use(VeeValidate, { inject: false });
 Vue.use(VueRouter);
@@ -34,12 +35,12 @@ const routes = [
     path: "/home",
     name: "Home Page",
     component: Home
-  } /* ,
+  },
   {
     path: "/seniorTeam/playerList",
     name: "Player List Page",
     component: SeniorPlayerList
-  },
+  } /* ,
   {
     path: "/seniorTeam/playerDetails",
     name: "Player Details Page",
