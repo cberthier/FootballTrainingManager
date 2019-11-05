@@ -2,7 +2,7 @@
   <v-app id="inspire">
     <v-navigation-drawer v-model="drawer" app clipped>
       <v-list dense>
-        <v-list-item>
+        <v-list-item to="/home">
           <v-list-item-action>
             <v-icon>mdi-view-dashboard</v-icon>
           </v-list-item-action>
@@ -20,7 +20,7 @@
             </v-list-item-content>
           </template>
 
-          <v-list-item link>
+          <v-list-item to="/seniorTeam/playerList">
             <v-list-item-action>
               <v-icon>mdi-account-group</v-icon>
             </v-list-item-action>
@@ -64,7 +64,7 @@
             </v-list-item-content>
           </template>
 
-          <v-list-item link>
+          <v-list-item to="/youthTeam/playerList">
             <v-list-item-action>
               <v-icon>mdi-account-group</v-icon>
             </v-list-item-action>

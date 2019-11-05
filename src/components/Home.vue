@@ -9,7 +9,7 @@
         <action-card
           title="Team Players"
           logo="mdi-account-group"
-          href="/#/seniorTeam/playerList"
+          to="/seniorTeam/playerList"
           description="Show all your team players with their characteristics and characteristics evolutions."
         />
       </v-col>
@@ -17,7 +17,7 @@
         <action-card
           title="Auto Update"
           logo="mdi-sync"
-          href="#"
+          to="#"
           description="Upload csv file from Hattrick site to automatique update your team player."
         />
       </v-col>
@@ -25,7 +25,7 @@
         <action-card
           title="Add Player"
           logo="mdi-account-plus"
-          href="#"
+          to="#"
           description="For some case, you can add a new player by specifying all of its characteristics manually."
         />
       </v-col>
@@ -33,7 +33,7 @@
         <action-card
           title="Training Analyser"
           logo="mdi-chart-areaspline"
-          href="#"
+          to="#"
           description="Analyze your team to set up the best training according to your goal."
         />
       </v-col>
@@ -47,7 +47,7 @@
         <action-card
           title="Team Players"
           logo="mdi-account-group"
-          href="/#/seniorTeam/playerList"
+          to="/youthTeam/playerList"
           description="Show all your team players with their characteristics and characteristics evolutions."
         />
       </v-col>
@@ -55,7 +55,7 @@
         <action-card
           title="Auto Update"
           logo="mdi-sync"
-          href="#"
+          to="#"
           description="Upload csv file from Hattrick site to automatique update your team player."
         />
       </v-col>
@@ -63,7 +63,7 @@
         <action-card
           title="Add Player"
           logo="mdi-account-plus"
-          href="#"
+          to="#"
           description="For some case, you can add a new player by specifying all of its characteristics manually."
         />
       </v-col>
@@ -71,7 +71,7 @@
         <action-card
           title="Training Analyser"
           logo="mdi-chart-areaspline"
-          href="#"
+          to="#"
           description="Analyze your team to set up the best training according to your goal."
         />
       </v-col>

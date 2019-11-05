@@ -1,5 +1,5 @@
 <template>
-  <v-card>
+  <v-card :to="to">
     <v-container>
       <v-row>
         <v-col cols="12" sm="12" md="12" lg="3" xl="3" align-self="center">
@@ -21,7 +21,7 @@
 <script>
 export default {
   name: "ActionCard",
-  props: ["title", "logo", "description", "href"]
+  props: ["title", "logo", "description", "to"]
 };
 </script>
 
