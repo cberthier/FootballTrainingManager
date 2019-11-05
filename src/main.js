@@ -10,6 +10,7 @@ import Signup from "./components/Signup";
 import Home from "./components/Home";
 import SeniorPlayerList from "@/components/seniorTeam/PlayerList";
 import YouthPlayerList from "@/components/youthTeam/PlayerList";
+import ForgottenPassword from "./components/ForgottenPassword";
 
 Vue.use(VeeValidate, { inject: false });
 Vue.use(VueRouter);
@@ -46,6 +47,11 @@ const routes = [
     path: "/youthTeam/playerList",
     name: "Player List Page",
     component: YouthPlayerList
+  },
+  {
+    path: "/forgottenPassword",
+    name: "ForgottenPassword Page",
+    component: ForgottenPassword
   } /* ,
   {
     path: "/seniorTeam/playerDetails",

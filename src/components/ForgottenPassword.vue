@@ -3,7 +3,7 @@
     <v-flex xs12 sm8 md4 lg3>
       <v-card class="elevation-12">
         <v-card-text>
-          <h1>LOGIN</h1>
+          <h1>FORGOTTEN PASSWORD</h1>
         </v-card-text>
         <v-card-text>
           <v-form>
@@ -14,21 +14,10 @@
               type="text"
               outlined
             ></v-text-field>
-            <v-text-field
-              id="password"
-              label="Password"
-              name="password"
-              prepend-icon="mdi-lock"
-              type="password"
-              outlined
-            ></v-text-field>
           </v-form>
         </v-card-text>
         <v-card-text>
-          <v-btn color="primary">Login</v-btn>
-        </v-card-text>
-        <v-card-text>
-          <v-btn text small to="/forgottenPassword">Forgotten password</v-btn>
+          <v-btn color="primary">Submit</v-btn>
         </v-card-text>
       </v-card>
     </v-flex>
@@ -37,7 +26,7 @@
 
 <script>
 export default {
-  name: "Login"
+  name: "ForgottenPassword"
 };
 </script>
 
