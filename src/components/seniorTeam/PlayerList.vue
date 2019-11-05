@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-row>
-      <v-col cols="12" align-self="stretch">
+      <v-col cols="12" align-self="stretch" class="title">
         <h1>Players List</h1>
       </v-col>
       <v-col

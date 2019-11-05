@@ -1,16 +1,24 @@
 <template>
-  <v-card to="/seniorTeam/playerDetails">
-    <v-card-title class="title">{{player.firstName}} {{player.lastName}}</v-card-title>
-    <v-card-text class="pb-1">
-      <v-avatar color="#BB86FC" size="22" class="mr-2">
-        <span class="black--text subtitle-2">2</span>
-      </v-avatar>
-      <v-avatar color="#03DAC6" size="22">
-        <span class="black--text subtitle-2">AT</span>
-      </v-avatar>
-    </v-card-text>
-    <v-divider/>
-    <v-list dense>
+  <v-card>
+    <v-list>
+      <v-list-item>
+        <v-row>
+          <v-col cols="6">
+            <h4>Team:
+              <v-avatar color="#BB86FC" size="32" class="ml-2">
+                <span class="black--text subtitle-2">2</span>
+              </v-avatar>
+            </h4>
+          </v-col>
+          <v-col cols="6">
+            <h4>Poste:
+              <v-avatar color="#03DAC6" size="32" class="ml-2">
+                <span class="black--text subtitle-2">AT</span>
+              </v-avatar>
+            </h4>
+          </v-col>
+        </v-row>
+      </v-list-item>
       <v-list-item>
         <v-list-item-icon>
           <v-tooltip left>
@@ -27,6 +35,18 @@
         <v-list-item-icon>
           <v-tooltip left>
             <template v-slot:activator="{ on }">
+              <v-icon v-on="on">mdi-crown</v-icon>
+            </template>
+            <span>Speciality</span>
+          </v-tooltip>
+        </v-list-item-icon>
+        <v-list-item-subtitle>-</v-list-item-subtitle>
+      </v-list-item>
+      <v-divider inset/>
+      <v-list-item>
+        <v-list-item-icon>
+          <v-tooltip left>
+            <template v-slot:activator="{ on }">
               <v-icon v-on="on">mdi-certificate</v-icon>
             </template>
             <span>TSI</span>
@@ -35,7 +55,6 @@
         <v-list-item-subtitle>2200</v-list-item-subtitle>
       </v-list-item>
       <v-divider inset/>
-
       <list-item-icon icon="mdi-weight-lifter" tooltip="Form"/>
       <v-divider inset/>
       <list-item-icon icon="mdi-run" tooltip="Stamina"/>
@@ -46,11 +65,14 @@
 <script>
 import ListItemIcon from "./ListItemIcon";
 export default {
-  name: "PlayerCard",
+  name: "BasicInfosCard",
   components: { ListItemIcon },
   props: ["player"]
 };
 </script>
 
 <style scoped>
+.v-card {
+  min-height: 360px;
+}
 </style>

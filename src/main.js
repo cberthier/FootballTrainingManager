@@ -9,6 +9,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Home from "./components/Home";
 import SeniorPlayerList from "@/components/seniorTeam/PlayerList";
+import SeniorPlayerDetails from "@/components/seniorTeam/PlayerDetails";
 import YouthPlayerList from "@/components/youthTeam/PlayerList";
 import ForgottenPassword from "./components/ForgottenPassword";
 
@@ -52,12 +53,12 @@ const routes = [
     path: "/forgottenPassword",
     name: "ForgottenPassword Page",
     component: ForgottenPassword
-  } /* ,
+  },
   {
     path: "/seniorTeam/playerDetails",
     name: "Player Details Page",
     component: SeniorPlayerDetails
-  },
+  } /* ,
   {
     path: "/youthTeam/playerList",
     name: "Player List Page",

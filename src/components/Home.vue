@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-row>
-      <v-col cols="12">
+      <v-col cols="12" class="title">
         <h1>Senior Team</h1>
       </v-col>
 
@@ -40,7 +40,7 @@
       <v-col cols="12">
         <v-divider dark></v-divider>
       </v-col>
-      <v-col cols="12">
+      <v-col cols="12" class="title">
         <h1>Youth Team</h1>
       </v-col>
       <v-col cols="12" sm="4" md="4" lg="4" xl="4">
