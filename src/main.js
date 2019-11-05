@@ -9,6 +9,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Home from "./components/Home";
 import SeniorPlayerList from "@/components/seniorTeam/PlayerList";
+import YouthPlayerList from "@/components/youthTeam/PlayerList";
 
 Vue.use(VeeValidate, { inject: false });
 Vue.use(VueRouter);
@@ -40,6 +41,11 @@ const routes = [
     path: "/seniorTeam/playerList",
     name: "Player List Page",
     component: SeniorPlayerList
+  },
+  {
+    path: "/youthTeam/playerList",
+    name: "Player List Page",
+    component: YouthPlayerList
   } /* ,
   {
     path: "/seniorTeam/playerDetails",
