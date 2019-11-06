@@ -3,15 +3,15 @@
     <v-list>
       <v-list-item>
         <v-row>
-          <v-col cols="6">
+          <v-col cols="12" sm="4" md="6" lg="6" xl="4">
             <h4>Team:
               <v-avatar color="#BB86FC" size="32" class="ml-2">
                 <span class="black--text subtitle-2">2</span>
               </v-avatar>
             </h4>
           </v-col>
-          <v-col cols="6">
-            <h4>Poste:
+          <v-col cols="12" sm="4" md="6" lg="6" xl="4">
+            <h4>Category:
               <v-avatar color="#03DAC6" size="32" class="ml-2">
                 <span class="black--text subtitle-2">AT</span>
               </v-avatar>
