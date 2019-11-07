@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row>
+    <v-row :dense="$vuetify.breakpoint.xsOnly">
       <v-col cols="12" class="title">
         <h1>Senior Team</h1>
       </v-col>

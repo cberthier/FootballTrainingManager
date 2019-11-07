@@ -1,27 +1,61 @@
 <template>
   <v-container>
-    <v-row>
+    <v-row :dense="$vuetify.breakpoint.xsOnly">
       <v-col cols="12" class="title">
-        <h1>{{player.firstName}} {{player.lastName}}</h1>
+        <h1>
+          <flag iso="it"/>
+          {{player.firstName}} {{player.lastName}}
+        </h1>
       </v-col>
     </v-row>
-    <v-row>
+    <v-row :dense="$vuetify.breakpoint.xsOnly">
       <v-col cols="12" sm="12" md="4" lg="4" xl="4">
         <basic-infos-card :player="player"/>
       </v-col>
       <v-col cols="12" sm="12" md="8" lg="8" xl="8">
-        <caracteristics-card :player="player"/>
+        <v-row>
+          <v-col cols="6" sm="3" md="3" lg="3" xl="3" class="pt-0">
+            <circular-progress-card title="Form" :value="player.form" max="8"/>
+          </v-col>
+          <v-col cols="6" sm="3" md="3" lg="3" xl="3" class="pt-0">
+            <circular-progress-card title="Stamina" :value="player.stamina" max="8"/>
+          </v-col>
+          <v-col cols="6" sm="3" md="3" lg="3" xl="3" class="pt-0">
+            <position-category-card :value="player.category"/>
+          </v-col>
+          <v-col cols="6" sm="3" md="3" lg="3" xl="3" class="pt-0">
+            <team-category-card :value="player.team"/>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="12" sm="6" md="6" lg="6" xl="6">
+            <match-card :player="player"/>
+          </v-col>
+          <v-col cols="6" sm="3" md="3" lg="3" xl="3">
+            <injuries-card :value="player.injuries"/>
+          </v-col>
+          <v-col cols="6" sm="3" md="3" lg="3" xl="3">
+            <warnings-card :value="player.injuries"/>
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
     <v-row>
-      <v-col md="4">
-        <circular-progress-card title="Experience" value="6" max="20"/>
+      <v-col cols="12" sm="12" md="12" lg="6" xl="6">
+        <caracteristics-card :player="player"/>
       </v-col>
-      <v-col md="4">
-        <circular-progress-card title="Leadership" value="2" max="8"/>
-      </v-col>
-      <v-col md="4">
-        <circular-progress-card title="Loyalty" value="12" max="20"/>
+      <v-col cols="12" sm="12" md="12" lg="6" xl="6">
+        <v-row :dense="$vuetify.breakpoint.xsOnly">
+          <v-col cols="6" sm="4" md="4" lg="6" xl="6" class="pt-2">
+            <circular-progress-card title="Experience" :value="player.experience" max="20"/>
+          </v-col>
+          <v-col cols="6" sm="4" md="4" lg="6" xl="6" class="pt-2">
+            <circular-progress-card title="Leadership" :value="player.leadership" max="8"/>
+          </v-col>
+          <v-col cols="12" sm="4" md="4" lg="12" xl="12" class="pt-2">
+            <circular-progress-card title="Loyalty" :value="player.loyalty" max="20"/>
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
   </v-container>
@@ -31,24 +65,52 @@
 import CircularProgressCard from "./CircularProgressCard";
 import BasicInfosCard from "./BasicInfosCard";
 import CaracteristicsCard from "./CaracteristicsCard";
+import MatchCard from "./MatchCard";
+import TeamCategoryCard from "./TeamCategoryCard";
+import PositionCategoryCard from "./PositionCategoryCard";
+import InjuriesCard from "./InjuriesCard";
+import WarningsCard from "./WarningsCard";
 export default {
   name: "PlayerDetails",
-  components: { CircularProgressCard, BasicInfosCard, CaracteristicsCard },
+  components: {
+    CircularProgressCard,
+    BasicInfosCard,
+    CaracteristicsCard,
+    MatchCard,
+    TeamCategoryCard,
+    PositionCategoryCard,
+    InjuriesCard,
+    WarningsCard
+  },
   data: function() {
     return {
       value: 6,
       max: 20,
       player: {
         id: 16,
-        firstName: "Georges",
-        lastName: "Ducroquet",
-        age: 18,
+        firstName: "Nirmal",
+        lastName: "Kale",
+        age: { years: 24, days: 95 },
         speciality: "",
-        nationality: "France",
-        firstDayWithClub: "04-03-2018",
+        nationality: "Surinam",
+        firstDayWithClub: "26-06-2019",
+        form: 7,
+        stamina: 7,
+        experience: 6,
+        leadership: 2,
+        loyalty: 12,
+        tsi: 211940,
+        wage: 73464, //Salaire
+        injuries: 0, //Blessure
+        warnings: 0, //Cartons
+        category: "MC",
+        lastMatchDate: "30-10-2019",
+        lastMatchRating: 9,
+        lastMatchPosition: "MC",
+        team: 1,
         keeper: {
-          skillLevel: 2,
-          maxSkillLevel: 2,
+          skillLevel: 1,
+          maxSkillLevel: 1,
           skillEvolutions: [
             {
               skillLevel: 0,
@@ -57,8 +119,8 @@ export default {
           ]
         },
         defending: {
-          skillLevel: 5,
-          maxSkillLevel: 5,
+          skillLevel: 6,
+          maxSkillLevel: 6,
           skillEvolutions: [
             {
               skillLevel: 0,
@@ -71,8 +133,8 @@ export default {
           ]
         },
         playmaking: {
-          skillLevel: 5,
-          maxSkillLevel: 5,
+          skillLevel: 17,
+          maxSkillLevel: 17,
           skillEvolutions: [
             {
               skillLevel: 0,
@@ -81,8 +143,8 @@ export default {
           ]
         },
         winger: {
-          skillLevel: 7,
-          maxSkillLevel: 7,
+          skillLevel: 4,
+          maxSkillLevel: 4,
           skillEvolutions: [
             {
               skillLevel: 0,
@@ -91,8 +153,8 @@ export default {
           ]
         },
         passing: {
-          skillLevel: 4,
-          maxSkillLevel: 4,
+          skillLevel: 9,
+          maxSkillLevel: 9,
           skillEvolutions: [
             {
               skillLevel: 0,
@@ -109,8 +171,8 @@ export default {
           ]
         },
         scoring: {
-          skillLevel: 3,
-          maxSkillLevel: 3,
+          skillLevel: 5,
+          maxSkillLevel: 5,
           skillEvolutions: [
             {
               skillLevel: 0,
@@ -119,8 +181,8 @@ export default {
           ]
         },
         freeKick: {
-          skillLevel: 2,
-          maxSkillLevel: 2,
+          skillLevel: 5,
+          maxSkillLevel: 5,
           skillEvolutions: [
             {
               skillLevel: 0,

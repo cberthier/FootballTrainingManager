@@ -3,7 +3,7 @@
     <v-flex xs12 sm8 md4 lg3>
       <v-card class="elevation-12">
         <v-card-text>
-          <h1>FORGOTTEN PASSWORD</h1>
+          <h1 class="title">FORGOTTEN PASSWORD</h1>
         </v-card-text>
         <v-card-text>
           <v-form>

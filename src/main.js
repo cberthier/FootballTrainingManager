@@ -3,6 +3,7 @@ import App from "./App";
 import VeeValidate from "vee-validate";
 import vuetify from "./vuetify"; // path to vuetify export
 import VueRouter from "vue-router";
+import FlagIcon from "vue-flag-icon-2";
 
 import LandingPage from "./components/LandingPage";
 import Login from "./components/Login";
@@ -11,10 +12,16 @@ import Home from "./components/Home";
 import SeniorPlayerList from "@/components/seniorTeam/PlayerList";
 import SeniorPlayerDetails from "@/components/seniorTeam/PlayerDetails";
 import YouthPlayerList from "@/components/youthTeam/PlayerList";
+import YouthPlayerDetails from "@/components/youthTeam/PlayerDetails";
 import ForgottenPassword from "./components/ForgottenPassword";
 
 Vue.use(VeeValidate, { inject: false });
 Vue.use(VueRouter);
+Vue.use(FlagIcon);
+
+Vue.filter("tsiFormat", function(value) {
+  return new Intl.NumberFormat().format(value);
+});
 
 Vue.config.productionTip = false;
 
@@ -58,17 +65,12 @@ const routes = [
     path: "/seniorTeam/playerDetails",
     name: "Player Details Page",
     component: SeniorPlayerDetails
-  } /* ,
-  {
-    path: "/youthTeam/playerList",
-    name: "Player List Page",
-    component: YouthPlayerList
   },
   {
     path: "/youthTeam/playerDetails",
     name: "Player Details Page",
     component: YouthPlayerDetails
-  },
+  } /*,
   {
     path: "/components",
     name: "Components Page",

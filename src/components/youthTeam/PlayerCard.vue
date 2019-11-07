@@ -1,5 +1,5 @@
 <template>
-  <v-card>
+  <v-card to="/youthTeam/playerDetails">
     <v-card-title class="title">{{player.firstName}} {{player.lastName}}</v-card-title>
     <v-card-text class="pb-0">
       <v-avatar color="#BB86FC" size="22" class="mr-2">
