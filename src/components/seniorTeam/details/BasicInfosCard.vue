@@ -67,7 +67,7 @@
 </template>
 
 <script>
-import ListItemIcon from "./ListItemIcon";
+import ListItemIcon from "@/components/seniorTeam/ListItemIcon";
 export default {
   name: "BasicInfosCard",
   components: { ListItemIcon },

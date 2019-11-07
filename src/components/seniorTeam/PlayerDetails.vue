@@ -62,14 +62,14 @@
 </template>
 
 <script>
-import CircularProgressCard from "./CircularProgressCard";
-import BasicInfosCard from "./BasicInfosCard";
-import CaracteristicsCard from "./CaracteristicsCard";
-import MatchCard from "./MatchCard";
-import TeamCategoryCard from "./TeamCategoryCard";
-import PositionCategoryCard from "./PositionCategoryCard";
-import InjuriesCard from "./InjuriesCard";
-import WarningsCard from "./WarningsCard";
+import CircularProgressCard from "./details/CircularProgressCard";
+import BasicInfosCard from "./details/BasicInfosCard";
+import CaracteristicsCard from "./details/CaracteristicsCard";
+import MatchCard from "./details/MatchCard";
+import TeamCategoryCard from "./details/TeamCategoryCard";
+import PositionCategoryCard from "./details/PositionCategoryCard";
+import InjuriesCard from "./details/InjuriesCard";
+import WarningsCard from "./details/WarningsCard";
 export default {
   name: "PlayerDetails",
   components: {
