@@ -8,6 +8,8 @@
         <template v-slot:badge>2</template>
         <v-icon :x-large="$vuetify.breakpoint.smAndUp">mdi-bandage</v-icon>
       </v-badge>
+
+      <v-icon :x-large="$vuetify.breakpoint.smAndUp">mdi-human-handsup</v-icon>
     </v-card-text>
   </v-card>
 </template>

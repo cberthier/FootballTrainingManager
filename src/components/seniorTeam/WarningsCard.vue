@@ -14,6 +14,7 @@
         color="red"
         :x-large="$vuetify.breakpoint.smAndUp"
       >mdi-card</v-icon>
+      <v-icon :x-large="$vuetify.breakpoint.smAndUp">mdi-cancel</v-icon>
     </v-card-text>
   </v-card>
 </template>
