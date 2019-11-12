@@ -11,8 +11,10 @@ import Signup from "./components/Signup";
 import Home from "./components/Home";
 import SeniorPlayerList from "@/components/seniorTeam/PlayerList";
 import SeniorPlayerDetails from "@/components/seniorTeam/PlayerDetails";
+import SeniorAutoUpdate from "@/components/seniorTeam/AutoUpdate";
 import YouthPlayerList from "@/components/youthTeam/PlayerList";
 import YouthPlayerDetails from "@/components/youthTeam/PlayerDetails";
+import YouthAutoUpdate from "@/components/youthTeam/AutoUpdate";
 import ForgottenPassword from "./components/ForgottenPassword";
 
 Vue.use(VeeValidate, { inject: false });
@@ -47,19 +49,14 @@ const routes = [
     component: Home
   },
   {
-    path: "/seniorTeam/playerList",
-    name: "Player List Page",
-    component: SeniorPlayerList
-  },
-  {
-    path: "/youthTeam/playerList",
-    name: "Player List Page",
-    component: YouthPlayerList
-  },
-  {
     path: "/forgottenPassword",
     name: "ForgottenPassword Page",
     component: ForgottenPassword
+  },
+  {
+    path: "/seniorTeam/playerList",
+    name: "Player List Page",
+    component: SeniorPlayerList
   },
   {
     path: "/seniorTeam/playerDetails",
@@ -67,15 +64,25 @@ const routes = [
     component: SeniorPlayerDetails
   },
   {
+    path: "/seniorTeam/autoUpdate",
+    name: "Player Details Page",
+    component: SeniorAutoUpdate
+  },
+  {
+    path: "/youthTeam/playerList",
+    name: "Player List Page",
+    component: YouthPlayerList
+  },
+  {
     path: "/youthTeam/playerDetails",
     name: "Player Details Page",
     component: YouthPlayerDetails
-  } /*,
+  },
   {
-    path: "/components",
-    name: "Components Page",
-    component: Components
-  } */
+    path: "/youthTeam/autoUpdate",
+    name: "Player Details Page",
+    component: YouthAutoUpdate
+  }
 ];
 
 const router = new VueRouter({

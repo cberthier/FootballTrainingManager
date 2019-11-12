@@ -17,7 +17,7 @@
         <action-card
           title="Auto Update"
           logo="mdi-sync"
-          to="#"
+          to="/seniorTeam/autoUpdate"
           description="Upload csv file from Hattrick site to automatique update your team player."
         />
       </v-col>
@@ -55,7 +55,7 @@
         <action-card
           title="Auto Update"
           logo="mdi-sync"
-          to="#"
+          to="/youthTeam/autoUpdate"
           description="Upload csv file from Hattrick site to automatique update your team player."
         />
       </v-col>
