@@ -35,10 +35,9 @@
         <v-list-item-subtitle>2200</v-list-item-subtitle>
       </v-list-item>
       <v-divider inset/>
-
-      <list-item-icon icon="mdi-weight-lifter" tooltip="Form"/>
+      <list-item-icon icon="mdi-weight-lifter" tooltip="Form" :value="8" :max="8"/>
       <v-divider inset/>
-      <list-item-icon icon="mdi-run" tooltip="Stamina"/>
+      <list-item-icon icon="mdi-run" tooltip="Stamina" :value="7" :max="8"/>
     </v-list>
   </v-card>
 </template>

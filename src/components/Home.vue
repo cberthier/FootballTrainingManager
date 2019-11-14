@@ -63,7 +63,7 @@
         <action-card
           title="Add Player"
           logo="mdi-account-plus"
-          to="#"
+          to="/youthTeam/addPlayer"
           description="For some case, you can add a new player by specifying all of its characteristics manually."
         />
       </v-col>
@@ -82,6 +82,9 @@
 <script>
 import ActionCard from "./ActionCard";
 export default {
+  updated() {
+    console.log(this.$vuetify.breakpoint);
+  },
   name: "Home",
   components: { ActionCard }
 };

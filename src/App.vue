@@ -10,7 +10,7 @@
             <v-list-item-title>Dashboard</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-group :prepend-icon="mdi-home" no-action>
+        <v-list-group no-action>
           <template v-slot:activator>
             <v-list-item-action>
               <v-icon>mdi-numeric-1-box</v-icon>
@@ -54,7 +54,7 @@
           </v-list-item>
         </v-list-group>
 
-        <v-list-group :prepend-icon="mdi-home" no-action>
+        <v-list-group no-action>
           <template v-slot:activator>
             <v-list-item-action>
               <v-icon>mdi-numeric-2-box</v-icon>
@@ -80,7 +80,7 @@
               <v-list-item-title>Auto Update</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          <v-list-item link>
+          <v-list-item to="/youthTeam/addPlayer">
             <v-list-item-action>
               <v-icon>mdi-account-plus</v-icon>
             </v-list-item-action>

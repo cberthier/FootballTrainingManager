@@ -8,6 +8,7 @@
         <v-card-text>
           <v-form>
             <v-text-field
+              id="email"
               label="Email"
               name="email"
               prepend-icon="mdi-account"
@@ -15,6 +16,7 @@
               outlined
             ></v-text-field>
             <v-text-field
+              id="emailConfirmation"
               label="Email confirmation"
               name="email"
               prepend-icon="mdi-account"
@@ -30,7 +32,7 @@
               outlined
             ></v-text-field>
             <v-text-field
-              id="password"
+              id="passwordConfirmation"
               label="Password confirmation"
               name="password"
               prepend-icon="mdi-lock"

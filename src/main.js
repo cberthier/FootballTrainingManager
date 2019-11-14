@@ -15,6 +15,7 @@ import SeniorAutoUpdate from "@/components/seniorTeam/AutoUpdate";
 import YouthPlayerList from "@/components/youthTeam/PlayerList";
 import YouthPlayerDetails from "@/components/youthTeam/PlayerDetails";
 import YouthAutoUpdate from "@/components/youthTeam/AutoUpdate";
+import YouthPlayerForm from "@/components/youthTeam/addPlayer/PlayerForm";
 import ForgottenPassword from "./components/ForgottenPassword";
 
 Vue.use(VeeValidate, { inject: false });
@@ -55,33 +56,38 @@ const routes = [
   },
   {
     path: "/seniorTeam/playerList",
-    name: "Player List Page",
+    name: "Senior Player List Page",
     component: SeniorPlayerList
   },
   {
     path: "/seniorTeam/playerDetails",
-    name: "Player Details Page",
+    name: "Senior Player Details Page",
     component: SeniorPlayerDetails
   },
   {
     path: "/seniorTeam/autoUpdate",
-    name: "Player Details Page",
+    name: "Senior Auto Update Page",
     component: SeniorAutoUpdate
   },
   {
     path: "/youthTeam/playerList",
-    name: "Player List Page",
+    name: "Youth Player List Page",
     component: YouthPlayerList
   },
   {
     path: "/youthTeam/playerDetails",
-    name: "Player Details Page",
+    name: "Youth Player Details Page",
     component: YouthPlayerDetails
   },
   {
     path: "/youthTeam/autoUpdate",
-    name: "Player Details Page",
+    name: "Youth Auto Update Page",
     component: YouthAutoUpdate
+  },
+  {
+    path: "/youthTeam/addPlayer",
+    name: "Youth Add Player Page",
+    component: YouthPlayerForm
   }
 ];
 

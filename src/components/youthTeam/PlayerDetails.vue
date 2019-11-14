@@ -85,7 +85,7 @@ export default {
         lastMatchPosition: "AT",
         keeper: {
           skillLevel: 1,
-          maxSkillLevel: "",
+          maxSkillLevel: null,
           skillEvolutions: [
             {
               skillLevel: 0,
@@ -94,7 +94,7 @@ export default {
           ]
         },
         defending: {
-          skillLevel: "",
+          skillLevel: null,
           maxSkillLevel: 6,
           skillEvolutions: [
             {
@@ -108,7 +108,7 @@ export default {
           ]
         },
         playmaking: {
-          skillLevel: "1",
+          skillLevel: 1,
           maxSkillLevel: 3,
           skillEvolutions: [
             {
@@ -118,8 +118,8 @@ export default {
           ]
         },
         winger: {
-          skillLevel: "",
-          maxSkillLevel: "",
+          skillLevel: null,
+          maxSkillLevel: null,
           skillEvolutions: [
             {
               skillLevel: 0,
@@ -128,7 +128,7 @@ export default {
           ]
         },
         passing: {
-          skillLevel: "",
+          skillLevel: null,
           maxSkillLevel: 6,
           skillEvolutions: [
             {
@@ -156,8 +156,8 @@ export default {
           ]
         },
         freeKick: {
-          skillLevel: "",
-          maxSkillLevel: "",
+          skillLevel: null,
+          maxSkillLevel: null,
           skillEvolutions: [
             {
               skillLevel: 0,
