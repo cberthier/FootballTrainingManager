@@ -25,7 +25,7 @@
         <action-card
           title="Add Player"
           logo="mdi-account-plus"
-          to="#"
+          to="/seniorTeam/addPlayer"
           description="For some case, you can add a new player by specifying all of its characteristics manually."
         />
       </v-col>

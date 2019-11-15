@@ -5,7 +5,7 @@
       :name="name"
       v-model="skill"
       type="text"
-      outlined
+      :outlined="$vuetify.breakpoint.smAndUp"
       required
       :items="skillLevels"
       :rules="[skill => !!skill || 'This field is required']"
@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: "InputSkillLevel",
+  name: "SelectInputPlayerAbilities",
   props: ["label", "name"],
   data: function() {
     return {

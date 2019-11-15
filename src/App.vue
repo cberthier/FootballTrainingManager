@@ -36,7 +36,7 @@
               <v-list-item-title>Auto Update</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          <v-list-item link>
+          <v-list-item to="/seniorTeam/addPlayer">
             <v-list-item-action>
               <v-icon>mdi-account-plus</v-icon>
             </v-list-item-action>

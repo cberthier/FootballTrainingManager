@@ -12,6 +12,7 @@ import Home from "./components/Home";
 import SeniorPlayerList from "@/components/seniorTeam/PlayerList";
 import SeniorPlayerDetails from "@/components/seniorTeam/PlayerDetails";
 import SeniorAutoUpdate from "@/components/seniorTeam/AutoUpdate";
+import SeniorPlayerForm from "@/components/seniorTeam/addPlayer/PlayerForm";
 import YouthPlayerList from "@/components/youthTeam/PlayerList";
 import YouthPlayerDetails from "@/components/youthTeam/PlayerDetails";
 import YouthAutoUpdate from "@/components/youthTeam/AutoUpdate";
@@ -68,6 +69,11 @@ const routes = [
     path: "/seniorTeam/autoUpdate",
     name: "Senior Auto Update Page",
     component: SeniorAutoUpdate
+  },
+  {
+    path: "/seniorTeam/addPlayer",
+    name: "Senior Add Player Page",
+    component: SeniorPlayerForm
   },
   {
     path: "/youthTeam/playerList",
