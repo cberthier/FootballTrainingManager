@@ -42,35 +42,7 @@
           </v-col>
 
           <v-col cols="12" sm="5" md="5" lg="4" xl="4">
-            <template>
-              <v-menu
-                ref="menu"
-                v-model="menu"
-                :close-on-content-click="false"
-                transition="scale-transition"
-                offset-y
-                min-width="290px"
-              >
-                <template v-slot:activator="{ on }">
-                  <v-text-field
-                    v-model="firstDayWithClub"
-                    label="First Day With Club"
-                    :prepend-icon="showIcon('mdi-airport')"
-                    readonly
-                    :outlined="$vuetify.breakpoint.smAndUp"
-                    required
-                    v-on="on"
-                  ></v-text-field>
-                </template>
-                <v-date-picker
-                  ref="picker"
-                  v-model="firstDayWithClub"
-                  :max="new Date().toISOString().substr(0, 10)"
-                  min="1950-01-01"
-                  @change="save"
-                ></v-date-picker>
-              </v-menu>
-            </template>
+            <select-date label="First Day With Club" :icon="showIcon('mdi-airport')"/>
           </v-col>
 
           <v-col cols="12" sm="3" md="6" lg="3" xl="3">
@@ -131,8 +103,10 @@
 </template>
 
 <script>
+import SelectDate from "@/components/form/SelectDate";
 export default {
   name: "BasicInformationsCard",
+  components: { SelectDate },
   watch: {
     menu(val) {
       val && setTimeout(() => (this.$refs.picker.activePicker = "YEAR"));
@@ -163,7 +137,6 @@ export default {
       form: 0,
       stamina: 0,
       length: 8,
-      menu: false,
       size: 20,
       name: "",
       age: { years: null, days: null },
@@ -177,7 +150,6 @@ export default {
         "Unpredictable",
         "None"
       ],
-      firstDayWithClub: null,
       requiredRules: [value => !!value || "This field is required"],
       numberPositifRules: [
         value => !!value || "This field is required",

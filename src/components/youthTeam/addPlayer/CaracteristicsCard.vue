@@ -1,26 +1,30 @@
 <template>
   <v-card>
-    <v-form>
+    <v-form ref="form">
       <v-container>
-        <v-row :dense="$vuetify.breakpoint.xsOnly">
-          <select-input-player-abilities label="Keeper" name="keeper"/>
-          <select-input-player-abilities label="Defending" name="defending"/>
-          <select-input-player-abilities label="Playmaking" name="playmaking"/>
-          <select-input-player-abilities label="Winger" name="winger"/>
-          <select-input-player-abilities label="Passing" name="passing"/>
-          <select-input-player-abilities label="Scoring" name="scoring"/>
-          <select-input-player-abilities label="Free kick" name="freeKick"/>
-        </v-row>
+        <v-simple-table>
+          <template>
+            <tbody>
+              <table-row-caracteristic label="Keeper"/>
+              <table-row-caracteristic label="Defending"/>
+              <table-row-caracteristic label="Playmaking"/>
+              <table-row-caracteristic label="Winger"/>
+              <table-row-caracteristic label="Passing"/>
+              <table-row-caracteristic label="Scoring"/>
+              <table-row-caracteristic label="Free kick"/>
+            </tbody>
+          </template>
+        </v-simple-table>
       </v-container>
     </v-form>
   </v-card>
 </template>
 
 <script>
-import SelectInputPlayerAbilities from "@/components/form/SelectInputPlayerAbilities";
+import TableRowCaracteristic from "./TableRowCaracteristic";
 export default {
   name: "CaracteristicsCard",
-  components: { SelectInputPlayerAbilities },
+  components: { TableRowCaracteristic },
   data: function() {
     return {};
   }
