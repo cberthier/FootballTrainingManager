@@ -44,7 +44,7 @@
               <v-list-item-title>Add Player</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          <v-list-item link>
+          <v-list-item to="/seniorTeam/trainingAnalyser">
             <v-list-item-action>
               <v-icon>mdi-chart-areaspline</v-icon>
             </v-list-item-action>

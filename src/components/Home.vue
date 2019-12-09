@@ -33,7 +33,7 @@
         <action-card
           title="Training Analyser"
           logo="mdi-chart-areaspline"
-          to="#"
+          to="/seniorTeam/trainingAnalyser"
           description="Analyze your team to set up the best training according to your goal."
         />
       </v-col>
