@@ -19,8 +19,14 @@
     <v-avatar left color="red">-{{oldValue - value}}</v-avatar>
     {{ value }}
   </v-chip>
-  <v-chip outlined v-else :small="$vuetify.breakpoint.mdOnly" :x-small="$vuetify.breakpoint.smAndDown" pill>
-    <v-avatar left color="orange">=</v-avatar>
+  <v-chip
+    outlined
+    v-else
+    :small="$vuetify.breakpoint.mdOnly"
+    :x-small="$vuetify.breakpoint.smAndDown"
+    pill
+  >
+    <v-avatar left color="white" class="black--text">=</v-avatar>
     {{ value }}
   </v-chip>
 </template>
